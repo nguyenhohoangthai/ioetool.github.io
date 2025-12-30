@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hướng dẫn lấy API Key</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+			font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+		}
+
+		body {
+			margin: 0;
+			background: #f4f6f8;
+			color: #333;
+			line-height: 1.7;
+		}
+
+		header {
+			background: linear-gradient(135deg, #667eea, #764ba2);
+			color: #fff;
+			padding: 30px 20px;
+			text-align: center;
+		}
+
+		header h1 {
+			margin: 0;
+			font-size: 28px;
+		}
+
+		header p {
+			margin-top: 10px;
+			opacity: 0.9;
+		}
+
+		.container {
+			max-width: 900px;
+			margin: 30px auto;
+			padding: 0 20px;
+		}
+
+		.section {
+			background: #fff;
+			padding: 25px;
+			border-radius: 12px;
+			margin-bottom: 30px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+		}
+
+		.section h2 {
+			margin-top: 0;
+			color: #4a4aef;
+		}
+
+		.steps {
+			margin-left: 20px;
+		}
+
+		.steps li {
+			margin-bottom: 10px;
+		}
+
+		a {
+			color: #4a4aef;
+			text-decoration: none;
+			font-weight: 500;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.video {
+			margin-top: 20px;
+			position: relative;
+			padding-bottom: 56.25%;
+			height: 0;
+			overflow: hidden;
+			border-radius: 10px;
+		}
+
+		.video iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+
+		.note {
+			background: #f0f3ff;
+			padding: 15px;
+			border-left: 5px solid #4a4aef;
+			margin-top: 15px;
+			border-radius: 6px;
+			font-size: 15px;
+		}
+
+		footer {
+			text-align: center;
+			padding: 20px;
+			color: #777;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+
+<header>
+	<h1>Hướng dẫn lấy API Key</h1>
+	<p>Dùng cho Groq & AssemblyAI</p>
+</header>
+
+<div class="container">
+	<div class="section">
+		<h2>⭐ Vì sao nên sử dụng API Key riêng?</h2>
+
+		<ul class="steps">
+			<li>
+				<b>Không bị xung đột với người dùng khác</b><br>
+				Mỗi người sử dụng API key của riêng mình, giúp tránh tình trạng quá tải,
+				từ đó <b>đảm bảo chất lượng và độ ổn định của kết quả trả về</b>.
+			</li>
+
+			<li>
+				<b>Chất lượng đáp án tốt hơn</b><br>
+				API key cá nhân giúp hệ thống xử lý nhanh và chính xác hơn,
+				không bị ảnh hưởng bởi lượt sử dụng của người khác.
+			</li>
+
+			<li>
+				<b>Hoàn toàn miễn phí</b><br>
+				Cả Groq và AssemblyAI đều cung cấp <b>free quota</b> cho người dùng,
+				bạn có thể sử dụng mà <b>không cần lo lắng về chi phí</b>.
+			</li>
+		</ul>
+		<div class="note">
+			🔐 Việc sử dụng API key riêng cũng giúp bảo mật tốt hơn và dễ quản lý khi cần thay đổi hoặc thu hồi key.
+		</div>
+	</div>
+		
+	<!-- Groq -->
+	<div class="section">
+		<h2>🔑 Lấy Groq API Key</h2>
+		<p>Groq cung cấp API để sử dụng các mô hình LLM với tốc độ rất cao.</p>
+
+		<ol class="steps">
+			<li>Truy cập trang Groq:  
+				<a href="https://console.groq.com" target="_blank">
+					https://console.groq.com
+				</a>
+			</li>
+			<li>Đăng nhập hoặc tạo tài khoản Groq.</li>
+			<li>Vào mục <b>API Keys</b> trong Dashboard.</li>
+			<li>Nhấn <b>Create API Key</b> để tạo key mới.</li>
+			<li>Sao chép API key và lưu lại (không chia sẻ cho người khác).</li>
+		</ol>
+
+		<div class="note">
+			⚠️ API key chỉ hiển thị một lần. Hãy lưu lại ngay sau khi tạo.
+		</div>
+
+		<div class="video">
+			<div class="video">
+				<iframe 
+					src="https://www.youtube.com/embed/nt1PJu47nTk"
+					allowfullscreen>
+				</iframe>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- AssemblyAI -->
+	<div class="section">
+		<h2>🎧 Lấy AssemblyAI API Key</h2>
+		<p>AssemblyAI dùng để xử lý giọng nói, chuyển speech-to-text.</p>
+
+		<ol class="steps">
+			<li>Truy cập AssemblyAI:  
+				<a href="https://www.assemblyai.com/dashboard" target="_blank">
+					https://www.assemblyai.com/dashboard
+				</a>
+			</li>
+			<li>Đăng ký hoặc đăng nhập tài khoản.</li>
+			<li>Vào <b>Dashboard</b> → <b>API Key</b>.</li>
+			<li>Sao chép API key được cung cấp.</li>
+			<li>Dán API key này vào ứng dụng của bạn.</li>
+		</ol>
+
+		<div class="note">
+			💡 AssemblyAI có free quota cho người dùng mới.
+		</div>
+
+		<div class="video">
+			<iframe 
+				src="https://www.youtube.com/embed/rLWwnY5sOYM"
+				allowfullscreen>
+			</iframe>
+		</div>
+
+	</div>
+
+</div>
+
+<footer>
+	© 2025 • API Key Guide • Designed for easy setup
+</footer>
+
+</body>
+</html>
